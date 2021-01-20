@@ -17,12 +17,11 @@ Do the following:
 
    HINT: no function required
 */
-let votingAge = 45;
 
 if(votingAge >= 18){
-  console.log(true);
+  return(true);
 } 
-
+console.log(votingAge(45));
 
 /*
 Task 1b - Values
@@ -34,14 +33,14 @@ Do the following:
 
    HINT: no function required
 */
-let one = 'apple';
-let two = 'orange';
+let num1 = 3;
+let num2 = 5;
 
-if(two === 'orange'){
-  let one = 'banana';
+if(num2 === 5){
+  num1 = num2;
 }
 
-console.log(one)
+console.log(num1);
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -54,7 +53,7 @@ Do the following:
    HINT: look up the Number method
 */
 
-let string = '1999'
+
 
 
 /*
