@@ -17,7 +17,11 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = 45;
 
+if(votingAge >= 18){
+  console.log(true);
+} 
 
 
 /*
@@ -30,10 +34,14 @@ Do the following:
 
    HINT: no function required
 */
+let one = 'apple';
+let two = 'orange';
 
+if(two === 'orange'){
+  let one = 'banana';
+}
 
-
-
+console.log(one)
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -46,7 +54,7 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+let string = '1999'
 
 
 /*
@@ -77,7 +85,7 @@ Do the following:
 function dogYears(age){
   return age * 7;
 }
-
+dogYears(3);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -207,9 +215,15 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(startingNumber){
+  for (let i = startingNumber; i > 0; i--){
+    return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i-1} bottles of soda on the wall`;
   }
+}
+
+annoyingSong(5)
+
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
