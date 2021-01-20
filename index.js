@@ -148,8 +148,16 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+let computer = Math.random();
+
 function game(user, computer){
-    /*add your code here*/
+    if([user === 'Rock' && computer === 'Rock'] || [user === 'Paper' && computer === 'Paper'] || [user === 'Scissors' && computer === 'Scissors']){
+      return("it's a tie");
+    }else if([user === 'Rock' && computer === 'Paper'] || [user === 'Paper' && computer === 'Scissors'] || [user === 'Scissors' && computer === 'Rock']){
+      return("you lose!");
+    }else if([user === 'Rock' && computer === 'Scissors'] || [user === 'Paper' && computer === 'Rock'] || [user === 'Scissors' && computer === 'Paper']){
+      return("you win!")
+    }
 }
   
   
@@ -165,9 +173,11 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
-  }
+const miles = function(kilometers){
+  return kilometers * 0.621371;
+}
+
+console.log(miles(2));
 
 
 
@@ -179,9 +189,11 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
-  }
+const feet = function(cm){
+  return cm * 0.0328084;
+}
+
+console.log(feet(100));
  
 
 
@@ -215,8 +227,18 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function grade(num1){
+  if(num1 < 60){
+    return('you got an F');
+  }else if(num1 < 70){
+    return('you got a D');
+  }else if(num1 < 80){
+    return('you got a C');
+  }else if(num1 < 90){
+    return('you got a B');
+  }else if(num1 <= 100){
+    return('you got an A');
+  }
   }
   
   
